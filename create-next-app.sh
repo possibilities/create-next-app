@@ -18,7 +18,7 @@ cat <<EOF > ./package.json
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "test": "standard",
