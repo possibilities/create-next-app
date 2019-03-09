@@ -18,14 +18,12 @@ cat <<EOF > ./package.json
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "npm-run-all --race --parallel dev:lint \"dev:run -- {@}\" --",
-    "dev:run": "next dev",
-    "dev:lint": "sleep 5 && yarn lint-watch",
+    "dev": "yarn dev",
     "build": "next build",
     "start": "next start",
     "test": "standard",
     "lint": "standard",
-    "lint-watch": "nodemon --quiet --exec 'standard && echo linting: OK' --watch '**/*.js' --ignore node_modules"
+    "lint:watch": "nodemon --quiet --exec 'standard && echo linting: OK' --watch '**/*.js' --ignore node_modules"
   }
 }
 EOF
@@ -93,7 +91,7 @@ node_modules
 EOF
 
 yarn add next react react-dom
-yarn add --dev standard nodemon npm-run-all
+yarn add --dev standard nodemon
 
 git init
 git add .
