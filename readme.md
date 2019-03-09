@@ -4,7 +4,9 @@ Shell script for creating a basic [Next.js](http://nextjs.org) app
 
 ## Install
 
+```ShellSession
 ln -s ${PWD}/create-react-app ${HOME}/lib/bin/create-react-app
+```
 
 ## Usage
 
